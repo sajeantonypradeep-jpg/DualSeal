@@ -40,5 +40,5 @@ jobs:
       - name: Build frontend
         run: |
           cd frontend
-          npm install
-          npx vite build
+          npm ci
+          npm run build --if-present

@@ -22,6 +22,13 @@ A proposer defines a vow and signs it. The counterparty seals it. Once sealed, t
 
 ---
 
+### 📱 Mobile Responsive View
+
+![Mobile View](./assets/mobile.png)
+
+---
+
+
 ## ⚙️ Core Features
 
 * **Dual-Signature Workflow** — two independent wallet approvals

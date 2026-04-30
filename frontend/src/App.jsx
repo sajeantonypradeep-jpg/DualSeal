@@ -192,7 +192,7 @@ export default function App() {
         {/* Header */}
         <header className="header">
           <div className="header-ornament">— ✦ ✦ ✦ —</div>
-          <h1 className="title">ChainVow</h1>
+          <h1 className="title">DualSeal</h1>
           <p className="subtitle">Eternal commitments, sealed on the Stellar blockchain</p>
           <div className="header-ornament">— ✦ ✦ ✦ —</div>
 
@@ -382,7 +382,7 @@ export default function App() {
 
         {/* Footer */}
         <footer className="footer">
-          <p>CHAINVOW — ETERNAL COMMITMENTS ON STELLAR</p>
+          <p>DUALSEAL PROTOCOL — IMMUTABLE COMMITMENTS ON STELLAR</p>
           <p className="footer-contract">
             Contract ID:{' '}
             <a

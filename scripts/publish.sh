@@ -5,13 +5,13 @@
 set -e
 CYAN='\033[0;36m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; NC='\033[0m'
 
-REPO_NAME="chainvow"
+REPO_NAME="dual-seal"
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 
 echo -e "${CYAN}[1/4] Creating GitHub repo: ${REPO_NAME}${NC}"
 gh repo create "${REPO_NAME}" \
   --public \
-  --description "ChainVow — Eternal commitments sealed on the Stellar blockchain" \
+  --description "DualSeal Protocol — Two-phase signature smart contract on Soroban" \
   --source "${ROOT_DIR}" \
   --remote origin \
   --push

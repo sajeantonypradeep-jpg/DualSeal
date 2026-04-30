@@ -1,10 +1,10 @@
-# ChainVow ✦
+# DualSeal Protocol ✦
 
-> **Eternal commitments, sealed on the Stellar blockchain**
+> **Two-phase signature smart contract on Soroban enabling immutable, dual-signed commitments between Stellar wallets.**
 
 Two wallets. One vow. Immutable forever.
 
-ChainVow lets any two Stellar wallet holders write a mutual commitment on-chain. The proposer writes the vow text and sets the partner's address. The partner seals it — a two-signature ceremony that locks the text to both addresses permanently in a Soroban smart contract.
+DualSeal Protocol lets any two Stellar wallet holders write a mutual commitment on-chain. The proposer writes the vow text and sets the partner's address. The partner seals it — a two-signature ceremony that locks the text to both addresses permanently in a Soroban smart contract.
 
 ---
 
@@ -94,21 +94,17 @@ chmod +x scripts/publish.sh && ./scripts/publish.sh
 
 ```
 User (Freighter Wallet)
-       │
-       ▼
+        │
+        ▼
 React Frontend (Vite)
-       │  @stellar/freighter-api  ← signs transactions
-       │  @stellar/stellar-sdk   ← builds + submits txs
-       ▼
+        │  @stellar/freighter-api  ← signs transactions
+        │  @stellar/stellar-sdk   ← builds + submits txs
+        ▼
 Soroban RPC (testnet)
-       │
-       ▼
-ChainVow Contract (WASM on Stellar testnet)
-       │
-       ├── propose_vow()  → stores Vow struct, marks proposer_signed=true
-       └── seal_vow()     → verifies partner auth, sets sealed=true
+        │
+        ▼
+DualSeal Contract (WASM on Stellar testnet)
+        │
+        ├── propose_vow()  → stores Vow struct, marks proposer_signed=true
+        └── seal_vow()     → verifies partner auth, sets sealed=true
 ```
-e
-
-
-

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ChainVow — Full deploy script
+# DualSeal Protocol — Full deploy script
 # Prerequisites: Rust + wasm32 target, stellar-cli, funded testnet account
 # Run: chmod +x deploy.sh && ./deploy.sh
 
@@ -8,7 +8,7 @@ RED='\033[0;31m'; GREEN='\033[0;32m'; YELLOW='\033[1;33m'; CYAN='\033[0;36m'; NC
 
 echo -e "${CYAN}"
 echo "  ╔═══════════════════════════════════╗"
-echo "  ║     ChainVow — Deploy Script      ║"
+echo "  ║   DualSeal Protocol — Deploy      ║"
 echo "  ╚═══════════════════════════════════╝"
 echo -e "${NC}"
 
@@ -23,7 +23,7 @@ echo -e "${GREEN}✓ Deployer: ${DEPLOYER_ADDR}${NC}"
 echo -e "${YELLOW}[2/6] Building Soroban contract...${NC}"
 cd contract
 cargo build --target wasm32-unknown-unknown --release
-WASM_PATH="target/wasm32-unknown-unknown/release/chainvow.wasm"
+WASM_PATH="target/wasm32-unknown-unknown/release/dual_seal.wasm"
 echo -e "${GREEN}✓ Built: ${WASM_PATH}${NC}"
 cd ..
 

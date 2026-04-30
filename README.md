@@ -2,7 +2,7 @@
 
 **Two signatures. One irreversible truth.**
 
-![CI](https://github.com/<your-username>/DualSeal/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/sajeantonypradeep-jpg/DualSeal/actions/workflows/ci.yml/badge.svg)
 
 ---
 
@@ -139,7 +139,7 @@ This ensures:
 
 ## 🌐 Live Links
 
-* **Frontend:** https://<your-new-vercel-link>.vercel.app
+* **Frontend:** https://dual-seal.vercel.app
 * **Contract:** https://stellar.expert/explorer/testnet/contract/CBIVYOVF66XZYUAF3YG6NKJI4R366HLUTHGL2C3WMBSO5HPVO5FNUBZU
 
 ---
